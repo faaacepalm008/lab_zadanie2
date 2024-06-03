@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Opis zadania 2
+### Struktura projektu:
+```
+zadanie2/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   └── Content.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── Dockerfile
+├── package.json
+└── .github/
+    └── workflows/
+        └── ci.yml
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Zadanie - Budowanie i Wdrażanie Obrazu Docker
 
-## Available Scripts
+To repozytorium zawiera kod źródłowy aplikacji React oraz konfigurację CI/CD do budowania i wdrażania obrazu Docker na platformie GitHub.
 
-In the project directory, you can run:
+## Opis Zadania
 
-### `npm start`
+Celem tego zadania jest:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Utworzenie aplikacji React.
+2. Skonfigurowanie CI/CD z wykorzystaniem GitHub Actions.
+3. Budowanie obrazu Docker dla aplikacji React.
+4. Testowanie obrazu pod kątem podatności na zagrożenia.
+5. Wdrażanie obrazu na GitHub Container Registry (GHCR).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Krok po Kroku
 
-### `npm test`
+1. **Utworzenie Aplikacji React:**
+   - Stworzona  nowa przykładowa aplikacja na React z tego powodu, że z zadanie 1 była nisko oceniona
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Konfiguracja CI/CD:**
+   - Skonfigorowałem plik `ci.yml` z wykorzystaniem GitHub Actions, który będzie budował, testował i wdrażał obraz Docker.
 
-### `npm run build`
+3. **Budowanie Obrazu Docker:**
+   - Stworzony odpowiedni plik `Dockerfile`, aby zbudować obraz Docker dla aplikacji React.![Zrzut ekranu 2024-06-3 o 17 39 25](https://github.com/faaacepalm008/lab_zadanie2/assets/83872764/a8d9174a-7502-4595-bc26-82599a8ff086)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Testowanie Podatności:**
+   - Wykonane skanowanie obrazu Docker pod kątem podatności na zagrożenia.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Wdrażanie Obrazu:**
+   - "PULL" zbudowanego obrazu Docker do GitHub Container Registry.
 
-### `npm run eject`
+![Zrzut ekranu 2024-06-3 o 17 34 32](https://github.com/faaacepalm008/lab_zadanie2/assets/83872764/1fb1442d-83d6-46c6-94b2-a94c482c73e3)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Zrzut ekranu 2024-06-3 o 17 37 59](https://github.com/faaacepalm008/lab_zadanie2/assets/83872764/c975c712-013e-4a8f-970b-328f57e3a92c)
+![Zrzut ekranu 2024-06-3 o 17 38 26](https://github.com/faaacepalm008/lab_zadanie2/assets/83872764/801aa998-804d-44af-a765-b5a0361effba)
